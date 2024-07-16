@@ -1,0 +1,32 @@
+#====================================================================================
+#	Handeling Seed Files for all Civil Design Types - %level Organization(+)
+#====================================================================================
+# MS_SEEDFILES                            						= $(CIVIL_ORGANIZATION_STANDARDS)Seed/
+#
+# %if $(_USTN_PRODUCT_NAME) == "OpenRail Designer"
+# 		MS_DESIGNSEED                           				= XDOT_DesignSeed2D_Rail.dgn
+# 		MS_DESIGNMODELSEED                      				= XDOT_DesignSeed2D_Rail.dgn
+# 		MS_DESIGNMODELSEEDNAME                  				= Default
+# %else $(_USTN_PRODUCT_NAME) == "OpenSite Designer"
+# 		MS_DESIGNSEED                           				= XDOT_DesignSeed2D_Site.dgn
+# 		MS_DESIGNMODELSEED                      				= XDOT_DesignSeed2D_Site.dgn
+# 		MS_DESIGNMODELSEEDNAME                  				= Default
+# %else $(_USTN_PRODUCT_NAME) == "OpenBridge Modeler"
+# 		MS_DESIGNSEED                           				= XDOT_DesignSeed2D_Bridge.dgn
+# 		MS_DESIGNMODELSEED                      				= XDOT_DesignSeed2D_Bridge.dgn
+# 		MS_DESIGNMODELSEEDNAME                  				= Default
+# %endif
+#
+# MS_DRAWINGMODELSEED                     						= $(CIVIL_ORGANIZATION_STANDARDS)Seed/Sheets/ADOT_Seed2D-Intl Drawing.dgn
+# MS_DRAWINGMODELSEEDNAME                 						= 2D $(UNITS) Drawing
+# MS_SHEETMODELSEED                       						= $(CIVIL_ORGANIZATION_STANDARDS)Seed/Sheets/ADOT_Seed2D-Intl Sheet.dgn
+# MS_SHEETMODELSEEDNAME                   						= 2D $(UNITS) Sheet
+#
+# MS_DGNLIBSEEDFILE												= DGNLIB_Seed.dgnlib
+# MS_CELL_SEEDFILE												= Seed2D - $(CIVIL_FILENAME) Design.dgn 
+#
+# SUDA_SEED_FILE                          						= $(CIVIL_ORGANIZATION_STANDARDS)Dgnlib/Feature Definitions/ADOT_SU_Features_Annotations_Elem Temp $(CIVIL_FILENAME).dgnlib
+# SUDA_SEED_MODEL                         						= Default
+#
+# SUE_SEED_FILE                          						= $(CIVIL_ORGANIZATION_STANDARDS)Dgnlib/Feature Definitions/ADOT_SU_Features_Annotations_Elem Temp $(CIVIL_FILENAME).dgnlib
+# SUE_SEED_MODEL                         						= Default
