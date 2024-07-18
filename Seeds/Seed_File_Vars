@@ -1,6 +1,7 @@
 #====================================================================================
 #	Handeling Seed Files for all Civil Design Types - %level Organization(+)
 #====================================================================================
+ 
  MS_SEEDFILES                            						= $(CIVIL_ORGANIZATION_STANDARDS)Seed/
 
  %if $(_USTN_PRODUCT_NAME) == "OpenRail Designer"
